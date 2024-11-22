@@ -1,13 +1,12 @@
-# gmi2groff README
+# Typeseting with Gemini 
 
 `gmi2groff` is a command-line tool for converting text files formatted in the Gemini protocol into Groff documents, utilizing the MOM macro package. This enables the creation of high-quality, typeset documents in formats like PDF.
 
-## Overview
+## Features and Options
 
-- Converts Gemini text structure into professional Groff typesetting.
-- Handles links to `.eps` image files and integrates them into the document.
-- Offers customizable document settings through an optional configuration file.
-- Supports an optional table of contents (TOC) with a single command.
+- **Automatic TOC**: Use the `--toc` flag for an automatically generated TOC positioned within the document.
+- **Image Integration**: Seamlessly processes `.eps` links to include images.
+- **Customizable Settings**: Define document appearance using a configuration file for personalized output.
 
 ## Prerequisites
 
@@ -20,10 +19,11 @@ Make sure the following are installed on your system:
 
 ## Installation
 
-1. **Clone the repository** to your local machine:
-   ```bash
-   git clone <repository-url>
-   ```
+Clone the repository** to your local machine:
+
+```bash
+git clone <repository-url>
+```
 
 ## Usage
 
@@ -40,7 +40,7 @@ Execute the `gmi2groff` script using:
 
 ### Image Handling
 
-Links pointing to `.eps` images within the Gemini text are automatically processed. Include image links using:
+Links pointing to `.eps` images within the Gemini text are automatically processed.
 
 ```
 => /path/to/image.eps Image Description
@@ -73,7 +73,7 @@ Create a custom settings file to adjust typography and layout, like this:
 .FAMILY T
 .LS 20
 .PT_SIZE 12
-.COLUMNS 1 20p
+.COLUMNS 2 20p
 .HEADING_STYLE 1 UNDERLINE
 .HEADING_STYLE 2 BOLD
 .HEADING_STYLE 3 ITALIC
@@ -83,14 +83,7 @@ Create a custom settings file to adjust typography and layout, like this:
 .FONT COLOR blue
 ```
 
-## Features and Options
+## License
 
-- **Automatic TOC**: Use the `--toc` flag for an automatically generated TOC positioned within the document.
-- **Image Integration**: Seamlessly processes `.eps` links to include images.
-- **Customizable Settings**: Define document appearance using a configuration file for personalized output.
-
-## Conclusion
-
-`gmi2groff` serves as an efficient bridge from Gemini protocol documents to high-fidelity Groff typesetting. By offering flexibility in customization and robust document processing capabilities, it is ideal for users looking to convert plaintext into well-formatted documents efficiently.
-
-This README provides a comprehensive guide to get started with `gmi2groff`, offering detailed instructions and examples to enhance your document formatting tasks. For any issues or further details, explore the user community and additional resources related to the tool.
+The MIT License (MIT)
+Copyright © 2024 by mono@yol.li
