@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# The MIT License (MIT)
+# Copyright © 2024 by mono@yol.li
+
 import sys
 import argparse
 
