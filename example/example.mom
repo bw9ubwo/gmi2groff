@@ -1,9 +1,13 @@
 .PRINTSTYLE TYPESET
 .PAPER A4
-.FAMILY H
+.FAMILY P
+.LS 18
+.PT_SIZE 10
+.COLUMNS 1 18p
 .HEADING_STYLE 1 NUMBER
 .HEADING_STYLE 2 NUMBER
 .HEADING_STYLE 3 NUMBER
+.BLOCKQUOTE_INDENT 2m
 
 .START
 .HEADING 1 "Sample Gemini Document"
@@ -47,10 +51,7 @@ Each item is straightforwardly listed with an asterisk, aligning with the offici
 At times, we all need a little motivation. Here's an inspiring quote for you:
 .SP 1
 .BLOCKQUOTE
-\*[IT]"In the middle of every difficulty lies opportunity."\*[PREV]
-.BLOCKQUOTE OFF
-.BLOCKQUOTE
-\*[IT]— Albert Einstein\*[PREV]
+\*[IT]"In the middle of every difficulty lies opportunity." — Albert Einstein\*[PREV]
 .BLOCKQUOTE OFF
 .LP
 .JUSTIFY
@@ -143,4 +144,3 @@ This sample Gemtext document demonstrates a range of elements, including extende
 .JUSTIFY
 The simplicity of the Gemini format not only streamlines content creation but also enhances accessibility for users, making it a powerful tool for modern digital communication.
 .SP 1
-.TOC
