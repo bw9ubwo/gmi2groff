@@ -1,4 +1,4 @@
-# Typeseting with Gemtext 
+# Typesetting with Gemtext 
 
 `gmi2groff` is a command-line tool for converting Gemtext files into Groff documents, utilizing the MOM macro package.
 
@@ -74,7 +74,7 @@ To convert `input.gmi` to a PDF with custom settings and a table of contents:
 
 ### Custom Settings File Example
 
-Create a custom settings file to adjust typography and layout, like this:
+Create a custom settings file to adjust typography and layout:
 
 ```plaintext
 .PRINTSTYLE TYPESET
@@ -83,6 +83,7 @@ Create a custom settings file to adjust typography and layout, like this:
 .LS 20
 .PT_SIZE 12
 ```
+Read the [MOM Macro Handbook](https://www.chiark.greenend.org.uk/doc/groff-base/html/mom/toc.html) for more options.
 
 ## License
 
