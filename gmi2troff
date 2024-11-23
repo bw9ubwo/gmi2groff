@@ -79,6 +79,10 @@ def write_image(outfile, url, label):
     """Write a standard paragraph."""
     outfile.write(f'.IB 2m\n.PSPIC "{url}"\n.LP\n.QUAD CENTER\n\*[SIZE -2]{label}\*[SIZE +2]\n.IBX\n.SP 1\n')
 
+def write_linebreak(outfile):
+    """Write a toc."""
+    outfile.write(f'.LINEBREAK\n')
+
 def write_toc(outfile):
     """Write a toc."""
     outfile.write(f'.TOC\n')
@@ -115,6 +119,10 @@ def process_line(outfile, line, block):
             if block == 'list':
                 end_list(outfile)
             write_heading(outfile, 3, line[4:].strip())
+        elif line.startswith('--'):
+            if block == 'list':
+                end_list(outfile)
+            write_linebreak(outfile)
         elif line.startswith('* ') or line.startswith('- '):
             if block == None:
                 start_list(outfile)
